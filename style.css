@@ -1,0 +1,79 @@
+body {
+	background: #FFC658;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	font-size: 16px;
+}
+
+h1 {
+	font-family: 'K2D', sans-serif;
+	margin-bottom: 3rem;
+}
+
+h2 {
+	font-family: 'K2D', sans-serif;
+	background: white;
+	position: absolute;
+	top: -50px;
+	left: 70px;
+	padding: 10px;
+}
+
+.card {
+	width: 400px;
+	padding: 40px 20px;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 5px 60px rgba(0, 0, 0, 0.04);
+}
+
+form {
+	text-align: center;
+}
+
+input {
+	border: none;
+	box-shadow: 0px 1px 0px #00cab5;
+	padding: 5px;
+	margin-bottom: 15px;
+	font-size: 1rem;
+}
+
+button {
+	color: white;
+	font-size: .8rem;
+	font-weight: bold;
+	padding: 10px 40px;
+	border-radius: 3px;
+	border: 0;
+	background-color: #1CA421;
+	box-shadow: 0 2.5px 5px rgba(0, 0, 0, .5);
+	transition: 0.6s;
+}
+
+button:hover {
+	box-shadow: 0 0 0;
+	transform: translate(0, 2px);
+}
+
+.result {
+	border: 2px solid #00cab5;
+	margin-top: 3rem;
+	padding: 0 4rem;
+	position: relative;
+	width: 180px;
+	height: 180px;
+	text-align: center;
+}
+
+#animal {
+	margin-top: 70px;
+	font-size: 1.8rem;
+	font-family: monospace;
+}
