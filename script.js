@@ -1,22 +1,19 @@
 const button = document.querySelector('#button');
 const input = document.querySelector('#input');
 const animal = document.querySelector('#animal');
+const inputForm = document.getElementById('calculator-form');
+
+const zodiac = [ 'Mice', 'Cow', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse',
+'Sheep', 'Monkey', 'Chicken', 'Dog', 'Boar'];
+let year;
 
 button.onclick = e => {
 	e.preventDefault();
 
 	const inputValue = input.value;
-	const zodiac = [ 'Mice', 'Cow', 'Tiger', 'Rabbit', 'Dragon', 'Snake', 'Horse',
-	'Sheep', 'Monkey', 'Chicken', 'Dog', 'Boar'];
-	let year;
 
+	year = inputValue <= 3 ? parseInt(inputValue) + 8 : (inputValue - 4) % 12;
 
-	if (inputValue <= 3) {
-		year = parseInt(inputValue) + 8;
-		//console.log(year);
-	} else {
-		year = (inputValue - 4) % 12;
-	}
-
-	animal.innerHTML = zodiac[year];
+	animal.textContent = zodiac[year];
+	inputForm.reset();
 }
